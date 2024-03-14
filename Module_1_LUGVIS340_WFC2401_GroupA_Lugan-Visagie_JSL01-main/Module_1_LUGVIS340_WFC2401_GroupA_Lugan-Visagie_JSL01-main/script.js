@@ -8,7 +8,7 @@ function validateSyntax() {
     let validInputRegex = new RegExp(`^${petPrefix}[0-9]+[a-zA-Z]+$`);
     let result = ''; // Placeholder for validation result
     //add a console.log to check the validInputRegex
-    console.log(validInputRegex);
+   
 
     // TODO: Write your validation logic here
         // Check if input starts with 'pet_' and followed by alphanumeric characters
@@ -16,13 +16,13 @@ function validateSyntax() {
     if (validInputRegex.test(input)) {
         result = 'valid Syntax';
         document.getElementById('result').style.color = '#008000';
-        document.getElementById('indicater').style.backgroundColor = '#008000';
-        console.log(result);
+        document.getElementById('indicator').style.backgroundColor = '#008000';
+       
     } else {
         result = 'invalid Syntax';
         document.getElementById('result').style.color = '#ff4500';
-        document.getElementById('indicater').style.backgroundColor = '#ff4500';
-        console.log(result);
+        document.getElementById('indicator').style.backgroundColor = '#ff4500';
+        
     }
 
             document.getElementById('result').innerText = result;
