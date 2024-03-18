@@ -5,7 +5,7 @@ function validateSyntax() {
     // Validation logic goes here
     let petPrefix = "pet_";
     //combine regular expressions into a single pattern
-    let validInputRegex = new RegExp(`^${petPrefix}[0-9]+[a-zA-Z]+$`);
+    let validInputRegex = new RegExp(`^${petPrefix}[0-9]{4}+[a-zA-Z]+$`);
     let result = ''; // Placeholder for validation result
     //add a console.log to check the validInputRegex
    
